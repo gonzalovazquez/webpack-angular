@@ -1,0 +1,20 @@
+{
+  "name": "webpack-angular",
+  "version": "1.0.0",
+  "description": "Example of using webpack with AngularJS",
+  "main": "app/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node node_modules/.bin/webpack-dev-server --content-base app",
+    "build": "NODE_ENV=production node node_modules/.bin/webpack && cp app/index.html dist"
+  },
+  "author": "Gonzalo Vazquez <gonzalo.segura1@gmail.com> (http://gonzalovazquez.ca)",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.2.1",
+    "babel-loader": "^6.2.0",
+    "raw-loader": "^0.5.1",
+    "webpack": "^1.12.8",
+    "webpack-dev-server": "^1.12.1"
+  }
+}
