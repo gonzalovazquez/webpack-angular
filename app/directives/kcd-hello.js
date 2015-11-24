@@ -1,12 +1,12 @@
-module.exports = function(ngModule){
-    ngModule.directive('kcdHello', function(){
+exports default ngModule => {
+    ngModule.directive('kcdHello', () => {
         return {
             restrict: 'E',
             scope: {},
             template: require('./kcd-hello.html'),
             controllerAs: 'vm',
             controller: function() {
-                var vm = this;
+                const vm = this;
                 vm.greeting = 'Hello Webpack';
             }
         };
