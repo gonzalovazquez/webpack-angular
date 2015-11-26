@@ -1,4 +1,4 @@
-exports default ngModule => {
+export default ngModule => {
     ngModule.directive('kcdHello', () => {
         return {
             restrict: 'E',
