@@ -4,15 +4,22 @@
   "description": "Example of using webpack with AngularJS",
   "main": "app/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "NODE_ENV=test node_modules/karma/bin/karma start",
     "start": "node node_modules/.bin/webpack-dev-server --content-base app",
     "build": "NODE_ENV=production node node_modules/.bin/webpack && cp app/index.html dist"
   },
   "author": "Gonzalo Vazquez <gonzalo.segura1@gmail.com> (http://gonzalovazquez.ca)",
   "license": "ISC",
   "devDependencies": {
+    "angular-mocks": "^1.4.8",
     "babel-loader": "^5.3.2",
     "css-loader": "^0.23.0",
+    "karma": "^0.13.15",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^0.2.1",
+    "karma-mocha": "^0.2.1",
+    "karma-webpack": "^1.7.0",
+    "mocha": "^2.3.4",
     "raw-loader": "^0.5.1",
     "sass-loader": "^1.0.3",
     "style-loader": "^0.13.0",
