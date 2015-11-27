@@ -20,6 +20,7 @@
     "karma-mocha": "^0.2.1",
     "karma-webpack": "^1.7.0",
     "mocha": "^2.3.4",
+    "ng-annotate-loader": "0.0.10",
     "raw-loader": "^0.5.1",
     "sass-loader": "^1.0.3",
     "style-loader": "^0.13.0",

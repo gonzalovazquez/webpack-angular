@@ -3,8 +3,8 @@ export default ngModule => {
     if (ON_TEST) {
       require('./kcd-hello.test')(ngModule);
     }
-    
-    ngModule.directive('kcdHello', () => {
+
+    ngModule.directive('kcdHello', ($log) => {
         require('./kcd-hello.styl');
         return {
             restrict: 'E',
@@ -14,6 +14,7 @@ export default ngModule => {
             controller: function() {
                 const vm = this;
                 vm.greeting = 'Hello Webpack';
+                $log.info('I have some info');
             }
         };
     });
